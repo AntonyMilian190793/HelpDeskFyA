@@ -1,7 +1,7 @@
 <header class="site-header">
     <div class="container-fluid">
 
-        <a href="#" class="site-logo">
+        <a href="..\Home\" class="site-logo">
             <img class="hidden-md-down" src="../../public/img/logo.png" alt="">
             <img class="hidden-lg-up" src="../../public/img/logo.png" alt="">
         </a>
