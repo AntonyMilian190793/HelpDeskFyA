@@ -31,12 +31,16 @@ $(document).ready(function() {
     $.post("../../controller/categoria.php?op=combo", function(data,statuts){
         $('#cat_id').html(data);
     });
+
+        $.post("../../controller/prioridad.php?op=combo",function(data, status){
+        $('#prio_id').html(data);
+    });
 });
 
 function guardaryeditar(e){
     e.preventDefault();
     var formData = new FormData($("#ticket_form")[0]);
-    if($('#tick_descrip').summernote('isEmpty') || $('#tick_titulo').val() == ''){
+    if ($('#tick_descrip').summernote('isEmpty') || $('#tick_titulo').val()=='' || $('#cats_id').val() == 0 || $('#cat_id').val() == 0 || $('#prio_id').val() == 0){
         swal("Advetencia!", "Campos Vacíos", "warning");
     }else{
 

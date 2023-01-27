@@ -51,7 +51,7 @@ if (isset($_SESSION["usu_id"])) {
 
 						<div class="col-lg-6">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="cat_nom">Categoría</label>
+								<label class="form-label semibold" for="cat_nom">Área</label>
 								<input type="text" class="form-control" id="cat_nom" name="cat_nom" readonly>
 							</fieldset>
 						</div>
@@ -59,10 +59,18 @@ if (isset($_SESSION["usu_id"])) {
 
 						<div class="col-lg-6">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="tick_titulo">Título</label>
+								<label class="form-label semibold" for="tick_titulo">Tipo</label>
 								<input type="text" class="form-control" id="tick_titulo" name="tick_titulo" readonly>
 							</fieldset>
 						</div>
+
+						<div class="col-lg-6">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="cat_nom">Prioridad</label>
+								<input type="text" class="form-control" id="prio_nom" name="prio_nom" readonly>
+							</fieldset>
+						</div>
+
 
 						<div class="col-lg-12">
 							<fieldset class="form-group">
